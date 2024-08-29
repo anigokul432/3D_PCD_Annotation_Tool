@@ -1,0 +1,212 @@
+/* Add styling for delete button */
+.delete-button {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #dc3545; /* Red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #b02a37; /* Darker red on hover */
+}
+
+.delete-button:active {
+  background-color: #8b1d28; /* Even darker red when clicked */
+}
+
+.delete-button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 10px rgba(220, 53, 69, 0.7); /* Add a red shadow when focused */
+}
+
+.annotation {
+  position: absolute;
+  width: 100px;
+  background-color: white;
+  border-radius: 15px 15px 15px 0px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.15); /* Drop shadow */
+  padding: 5px;
+  transform: translate(45%, 0%); /* Adjust to position bottom-left */
+  overflow: hidden; /* Ensure text is contained within the element */
+}
+
+.annotation textarea,
+.annotation p {
+  width: calc(100% - 12px);
+  font-size: 14px; /* Ensure the same font size for input and text */
+  margin-bottom: 5px;
+  word-wrap: break-word; /* Break words that are too long */
+  white-space: pre-wrap; /* Preserve whitespace and wraps long words */
+  resize: none; /* Disable manual resizing */
+  height: auto; /* Ensure it grows based on content */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.annotation textarea {
+  min-height: 20px; /* Minimum height for the textarea */
+}
+
+.annotation button {
+  display: block;
+  width: 100%;
+}
+
+.annotation p {
+  margin: 0; /* Remove default margin */
+}
+
+.poi-icon {
+  position: absolute;
+  transform: translate(-50%, -81%); /* Center the POI icon */
+  font-size: 2em; /* Size of the POI icon */
+}
+
+.poi {
+  position: absolute;
+  width: 150px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.15); /* Drop shadow */
+  padding: 5px;
+  transform: translate(-50%, -50px); /* Adjust to position bottom-left */
+  overflow: hidden; /* Ensure text is contained within the element */
+}
+
+.poi input,
+.poi textarea,
+.poi p {
+  width: calc(100% - 12px);
+  font-size: 14px; /* Ensure the same font size for input and text */
+  margin-bottom: 5px;
+  word-wrap: break-word; /* Break words that are too long */
+  white-space: pre-wrap; /* Preserve whitespace and wraps long words */
+  resize: none; /* Disable manual resizing */
+  height: auto; /* Ensure it grows based on content */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.poi input {
+  margin-top: 20px;
+  min-height: 20px; /* Minimum height for the input */
+}
+
+.poi textarea {
+  min-height: 40px; /* Minimum height for the textarea */
+}
+
+.poi button {
+  display: block;
+  width: 100%;
+}
+
+.poi p {
+  margin: 0; /* Remove default margin */
+}
+
+.poi-close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  cursor: pointer;
+}
+
+.path-dialog {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+}
+
+.path-dialog input,
+.path-dialog textarea {
+  display: block;
+  width: 100%; /* Make input and textarea full width */
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  text-align: left; /* Center the text inside the inputs */
+}
+
+
+.path-button {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.path-button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.path-button:not(.active) {
+  background-color: #f1f1f1;
+}
+
+.path-dialog-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Slight dark background */
+}
+
+.path-point {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0);
+  transform: translate(-25%, -25%);
+}
+
+.save-button {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.save-button:active {
+  background-color: #003d80; /* Even darker blue when clicked */
+}
+
+.save-button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.7); /* Add a blue shadow when focused */
+}
+

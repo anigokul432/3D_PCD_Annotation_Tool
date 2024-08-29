@@ -1,0 +1,57 @@
+.path-button {
+  font-size: 0.8em; /* Smaller font size for the button */
+  padding: 5px 10px;
+  margin-left: 10px; /* Space between buttons */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.path-button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.path-button:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.path-button.disabled {
+  color: gray;
+  cursor: not-allowed;
+}
+
+.add-point-button {
+  font-size: 0.8em; /* Smaller font size for the button */
+  padding: 5px 10px;
+  margin-left: 10px; /* Space between buttons */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-point-button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.add-point-button:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.add-point-button.disabled {
+  color: gray;
+  cursor: not-allowed;
+}
